@@ -3,16 +3,19 @@
 
 def fibby(n):
 	
-	# initialize two vaiables
+	# initialize two counter vaiables
 	a, b = 0, 1
 	# create a new list to hold sequence
-	my_list = []
+	my_list = [1]
 	# loop through range of 0 and input
 	for i in range(0,n):
 		
 		# fibonacci sequence moderator
+		# num is a placeholder for the original value of a
 		num = a
+		# a is assigned the value of b in the addition via the sequence
 		a = b
+		# b is assigned the value of the original 'a' and it's pre-value digit
 		b = num + b
 
 		# added sequence values to list
@@ -34,4 +37,4 @@ def fibbz(n):
 		return fibbz(n-1)+fibbz(n-2)
 
 
-fibbz(10)
+print fibbz(10)
