@@ -11,5 +11,6 @@ Version control is the management of changes to documents, computer programs, la
 
 2. How big should be a commit size  
 > All commits should handle a single case, commits should be organized logically and be specific.  
+
 3. formatting readme files.  
 > Read me files have vaious formatting ways including markdown. A readme should include the project's requirements and steps towards usage. An example of a formatted readme file defined [here](https://github.com/WordPress/WordPress)
