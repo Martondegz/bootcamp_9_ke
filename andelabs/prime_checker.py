@@ -9,7 +9,7 @@ if number is a prime number and false if it isn't.
 class PrimeChecker(object):
   
   # initialize class constructor with is_prime() var num
-  def __init__(self, number= ''):
+  def __init__(self, number=""):
     self.number = number
     # return number
   
