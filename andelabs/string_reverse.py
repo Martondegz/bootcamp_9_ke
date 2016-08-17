@@ -21,6 +21,10 @@ def reverse_string(string):
 		return string[::-1]
 
 
+
+
+
+
 def reverse_string(string):
   
   # first check for string length or Null

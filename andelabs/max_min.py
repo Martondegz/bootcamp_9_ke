@@ -22,7 +22,7 @@ def find_max_min(list):
     return new_list
   else:
 
-    # m defines the maximum or largest element in the list
+    # maxx defines the maximum or largest element in the list
     maxx = max(list)
     
     # minn defines the minimum or smallest element in the list
