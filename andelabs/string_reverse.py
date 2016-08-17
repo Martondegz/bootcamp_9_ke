@@ -6,15 +6,19 @@ as in the case of palindromes, return true instead.
 """
 
 
-# def reverse_string(string):
-  # if reversed(string) == string:
-  #   print string, reversed(string)
-  #   return reversed(string)
-  # elif string == '':
-  #   return None
-  # else:
-  #   new_string = reversed(string)
-  #   return new_string
+def reverse_string(string):
+
+	# check whether input is equal to reverse
+	if string[::-1] == string:
+		return True
+
+	# check for whether the input is empty or Null
+	elif string == '':
+		return None
+
+	# return the reverse if previous checks fail	
+	else:
+		return string[::-1]
 
 
 def reverse_string(string):
