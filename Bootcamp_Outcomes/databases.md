@@ -29,7 +29,7 @@ Examples of SQL databases:
 
 ###### Limitations for SQL Databases:  
 1. Scalability:  
-> Users have to scale relational database on powerful servers that are expensive and difficult to handle. To scale a relational db, it has to be distributed on multiple servers thus handling might be total chaos!  
+Users have to scale relational database on powerful servers that are expensive and difficult to handle. To scale a relational db, it has to be distributed on multiple servers thus handling might be total chaos!  
 
 ###### NOSQL Databases  
 
@@ -66,45 +66,44 @@ The only consideration is that a foreign key must be of the same data type as th
 ##### Database Queries  
 
 A query is a request for information from a database. Many database systems allow one to make requests for information in the form of a stylized query, that must be writtern in a special query language.  
-An appendix of commonly used commands:
-1. **ALTER TABLE**  
+An appendix of commonly used commands:  
+ **ALTER TABLE**  
 ```ALTER TABLE table_name ADD column datatype```  
 ALTER TABLE lets you add columns to a table in a database.  
 
-2. AND
+ **AND**
 ``` SELECT column_name FROM table_name
 	WHERE column_1 = value_1
-	AND column_2 = value_2;
-```
+	AND column_2 = value_2;```
 AND is an operator that combines two conditions. Both conditions must be true for the row to be included in the result set.  
 
-3. COUNT
+**COUNT**
 ``` SELECT COUNT(column_name) FROM TABLE table_name```
 COUNT() is a function that takes the name if a column as an argument and counts the number of rows where the column is NULL.  
 
-4. CREATE TABLE  
+**CREATE TABLE**  
 ``` CREATE TABLE table_name(column_1, column_2 datatype, column_3 datatype); ```
 CREATE TABLE creates a new table in the database. It allows you to specify the name of the table and the name of each column in the table.  
 
-5. DELETE
+**DELETE**
 ``` DELETE FROM table_name WHERE some_column = some_value; ```
 DELETE statements are used to remove rows from a table.  
 
 #### SQL Data types:  
 
- | Data Type 		| Description 						|
- | ---------------- |:---------------------------------:|
- | CHARACTER		| Character string. Fixed length n  |
- | BINARY			| Binary string. Fixed length n  |
- | VARCHAR(n)		| Character string. Variable length. max length n  |
- | BOOLEAN			| Stores True or False values  |
- | INTEGER(p)		| Integer numerical (no decimal). Precision p  |
- | SMALLINT			| Integer numerical (no decimal). precision 10  |
- | BIGINT			| Integer numerical (no decimal). precision 19  |
- | FLOAT			| Approximate numerical mantissa precision 16  |
- | DOUBLE PRECISION	| Approximate numerical mantissa precision 16  |
- | DATE				| Stores year, month and day values  |
- | TIME				| Stores year, month and day values  |
- | TIMESTAMP		| Stores year, month, day, hour, minute and second values  |
- | ARRAY			| A set-length and ordered collection of elements  |
+  Data Type | Description 	
+  --- | ---
+  CHARACTER | Character string. Fixed length n  
+ BINARY	| Binary string. Fixed length n  
+ VARCHAR(n) | Character string. Variable length. max length n 
+ BOOLEAN | Stores True or False values 
+ INTEGER(p) | Integer numerical (no decimal). Precision p 
+ SMALLINT | Integer numerical (no decimal). precision 10 
+ BIGINT | Integer numerical (no decimal). precision 19 
+ FLOAT | Approximate numerical mantissa precision 16 
+ DOUBLE PRECISION | Approximate numerical mantissa precision 16 
+ DATE | Stores year, month and day values 
+ TIME | Stores year, month and day values 
+ TIMESTAMP | Stores year, month, day, hour, minute and second values 
+ ARRAY | A set-length and ordered collection of elements 
  
