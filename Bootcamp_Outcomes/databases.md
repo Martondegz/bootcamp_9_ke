@@ -53,4 +53,58 @@ Examples of NoSQL databases:
 A relationship is a situation that exists between two relational database tables when one table has a foreign key that references the primary key of the other table. They allow relational dbs to split and store data in different tables, while linking disparate data items.  
 
 ##### Relationship types:  
-1. **One-to-one:** Both tables can have only one record on either side of the relationship. Each primary key value relates to only one (or no) record in the related table. 
+1. **One-to-one:** Both tables can have only one record on either side of the relationship. Each primary key value relates to only one (or no) record in the related table. they're like spouses -you may or may not be married, but if you are, both of you and your spouse have only one spouse.  
+
+2. **One-to-many:** The primary key table contains only one record that relates to none, one, or many records in the related table. This relationship is similar to the one between you and a parent. You only have one mother, but your mother may have several children.  
+
+3. **Many-to-many:** Each record in both tables can relate to any number of records (or no records) in the other table. For instance, if you have several siblings, so do your siblings(have many siblings). Many-to-many relationships require a thid table known as an associate or linking table, because relational systems can't directly accomodate the relationship.  
+
+Those matching values are the primary and foreign key values.(The relational model doesn't require that a relationship be based on a primary key.) You can use any candidate key in the table, but using the primary key is the accepted standard. A **primary key** uniquely identifies each record in a table. A **foreign key** simply puts one table's primary key in another table. Thus one just simply adds the primary jey field to the related table, as a foreign key.  
+
+The only consideration is that a foreign key must be of the same data type as the primary key. In addition, foreign keys can be Null.  
+
+##### Database Queries  
+
+A query is a request for information from a database. Many database systems allow one to make requests for information in the form of a stylized query, that must be writtern in a special query language.  
+An appendix of commonly used commands:
+1. **ALTER TABLE**  
+```ALTER TABLE table_name ADD column datatype```  
+ALTER TABLE lets you add columns to a table in a database.  
+
+2. AND
+``` SELECT column_name FROM table_name
+	WHERE column_1 = value_1
+	AND column_2 = value_2;
+```
+AND is an operator that combines two conditions. Both conditions must be true for the row to be included in the result set.  
+
+3. COUNT
+``` SELECT COUNT(column_name) FROM TABLE table_name```
+COUNT() is a function that takes the name if a column as an argument and counts the number of rows where the column is NULL.  
+
+4. CREATE TABLE  
+``` CREATE TABLE table_name(column_1, column_2 datatype, column_3 datatype); ```
+CREATE TABLE creates a new table in the database. It allows you to specify the name of the table and the name of each column in the table.  
+
+5. DELETE
+``` DELETE FROM table_name WHERE some_column = some_value; ```
+DELETE statements are used to remove rows from a table.  
+
+#### SQL Data types:  
+
+ | Data Type 		| Description 						|
+ | ---------------- |:---------------------------------:|
+ | CHARACTER		| Character string. Fixed length n  |
+ | BINARY			| Binary string. Fixed length n  |
+ | VARCHAR(n)		| Character string. Variable length. max length n  |
+ | BOOLEAN			| Stores True or False values  |
+ | INTEGER(p)		| Integer numerical (no decimal). Precision p  |
+ | SMALLINT			| Integer numerical (no decimal). precision 10  |
+ | BIGINT			| Integer numerical (no decimal). precision 19  |
+ | FLOAT			| Approximate numerical mantissa precision 16  |
+ | DOUBLE PRECISION	| Approximate numerical mantissa precision 16  |
+ | DATE				| Stores year, month and day values  |
+ | TIME				| Stores year, month and day values  |
+ | TIMESTAMP		| Stores year, month, day, hour, minute and second values  |
+ | ARRAY			| A set-length and ordered collection of elements  |
+ 
