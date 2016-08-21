@@ -20,10 +20,14 @@ def goodbye(name):
 	print('Goodbye, {0}'.format(name))
 
 def even(num):
-	if num % 2 == 0:
-		print('Even!!')
-	else:
-		print('Odd!...damn!')
+	print("I can't process that yet..." )
+	print("I'm a parser..... Say hello" )
+	# save = num *2
+	# print save
+	# if num % 2 == 0:
+	# 	print('Even!!')
+	# else:
+	# 	print('Odd!...damn!')
 
 
 if __name__ == '__main__':
