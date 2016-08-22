@@ -18,8 +18,13 @@ def weather_man(city_name):
 		})
 
 	response =json.loads(r.data.decode('utf-8'))
+	with open('weather.json', 'w') as f:
+		for resp in response:
+			f.write("{}\n".format(json.dumps(response)))
+			# json.dump(response, f)
+			# return True
 
-	print response
+	# print response
 
 
-weather_man('Lagos')
+weather_man('Kampala')
