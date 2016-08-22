@@ -9,6 +9,7 @@ def weather_man(city_name):
 	base_url = "http://api.openweathermap.org/data/2.5/weather"
 	consumer_key = '2bc3e79bb974a007818864813f53fd35'
 	city_name = city_name
+
 	r = http.request('GET', base_url, 
 		fields={
 		'q': city_name,
@@ -16,9 +17,9 @@ def weather_man(city_name):
 		'units':'metrics',
 		})
 
-	dee =json.loads(r.data.decode('utf-8'))
+	response =json.loads(r.data.decode('utf-8'))
 
-	print dee
+	print response
 
 
 weather_man('Lagos')
